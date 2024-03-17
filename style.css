@@ -23,9 +23,9 @@ height: 14vh;
 
 }
 .index{
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #363945;		
     flex:1;
 }
@@ -53,6 +53,7 @@ text-decoration: none;
     padding: 30px 10%;
     background-color: #9B2335;
     border-radius: 5px;
+    width: 100%;
  }
 .nav-links{
     list-style: none;
@@ -124,7 +125,8 @@ font-size:18px;
 
 .cast h2{
     font-family: "Montserrat", sans-serif;
-    margin:20px;
+    margin-left:20px;
+    margin-top:20px;
     color:#FFF0F5;
 }
 
@@ -134,27 +136,49 @@ font-size:18px;
 }
 .ac1,.ac2,.ac3,.ac4{
     width:300px;
+    text-align: center;
+    margin-bottom: 20px;
+  
 }
 .ac1 img{
-width:250px;
-height:250px;
-margin-bottom: 10px;
+    width:200px;
+    height:200px;
+    margin-bottom: 10px;
+    margin-right: 0;
+    margin-left: 0;
+   
 }
 .ac2 img{
-width:250px;
-height:250px;
-margin-bottom: 10px;
+    width:200px;
+    height:200px;
+    margin-bottom: 10px;
 }
 .ac3 img{
-width:250px;
-height:250px;
+width:200px;
+height:200px;
 margin-bottom: 10px;
 }
 .ac4 img{
-width:250px;
-height:250px;
-margin-bottom: 10px;
+    width:200px;
+    height:200px;
+    margin-bottom: 10px;
 }
+.ac1 p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}   
+.ac2 p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+} 
+.ac3 p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+} 
+.ac4 p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+} 
 .download{
     text-align: center;
 }
@@ -221,15 +245,223 @@ footer .copyright p{
 
 }
 
-@media(max-width:1000){
-.index{
-    display:block;
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    /* Galaxy Fold Size */
+
+    @media(min-width:280px)
+    {
+        .container{
+            width:270px;
+        }
+        header{
+            width:100%;
+            display: flex;
+            flex-direction: row;
+        }
+        .poster{
+            width: auto;
+            height: 250px;
+        }
+        .cast{
+            display: block;
+            text-align: center;
+        }
+        .cast h2{
+            display: block;
+        }
+        .actors{
+            display: block;
+            margin:10px;
+            padding: 10px;
+        }
+         .ac1 img{
+            width:100px;
+            height:100px;
+            margin-bottom: 10px;
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .ac2 img{
+            width:100px;
+            height:100px;
+            margin-bottom: 10px;
+        }
+        .ac3 img{
+        width:100px;
+        height:100px;
+        margin-bottom: 10px;
+        }
+        .ac4 img{
+            width:100px;
+            height:100px;
+            margin-bottom: 10px;
+        }
+        .ac1 p{
+            font-size: small;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }   
+        .ac2 p{
+            font-size: small;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        } 
+        .ac3 p{
+            font-size: small;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        } 
+        .ac4 p{
+            font-size: small;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        } 
+        .ac1, .ac2, .ac3, .ac4{
+            position: relative;
+            left:-35px;
+        }
+    }
+
+    /* Very Small */
+
+    @media screen and (min-width: 480px) {
+    .container{
+        width: 470px;
+    }
+    header{
+        width:100%;
+    }
+    .cast{
+        display: block;
+        text-align: center;
+    }
+    .cast h2{
+        display: block;
+    }
+    .actors{
+        display: block;
+        margin:10px;
+        padding: 10px;
+    }
+    .ac1, .ac2, .ac3, .ac4{
+        position: relative;
+        left:55px;
+    }
 }
-.main-movie .poster{
-    width:250px;
-    height:250px;
-}
-}
-.cast-img{
-    border-radius: 50%;
-}
+
+    /* Small */
+
+    @media (min-width: 768px)
+    {
+        .container{
+            width:750px;
+        }
+        .header{
+            width:100%;
+        }
+        .cast{
+           display: flex;
+           flex-direction: column;
+           text-align: center;
+        }
+        .ac1, .ac2, .ac3, .ac4{
+            position: relative;
+            left:200px;
+        }
+       
+       
+   }
+   /* iPad Air Size */
+   @media (min-width:820px)
+   {
+    .container{
+        width:810px;
+    }
+    .cast{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+     }
+     .ac1, .ac2, .ac3, .ac4{
+         position: relative;
+         left:230px;
+     }
+   }
+    /* Medium */
+    @media (min-width: 992px)
+    {
+     .container{
+            width:970px;
+        }
+        .header{
+            width:100%;
+        }
+        .actors
+        {
+            display: flex;
+        }
+        .cast h2{
+            margin-left:20px;
+            margin-top:20px;
+            float: left;
+        }
+        .ac1, .ac2, .ac3, .ac4{
+            position: relative;
+            left:18px;
+        }
+        .ac1 img{
+            width:200px;
+            height:200px;
+            margin-bottom: 10px;
+            margin-right: 0;
+            margin-left: 0;
+           
+        }
+        .ac2 img{
+            width:200px;
+            height:200px;
+            margin-bottom: 10px;
+        }
+        .ac3 img{
+        width:200px;
+        height:200px;
+        margin-bottom: 10px;
+        }
+        .ac4 img{
+            width:200px;
+            height:200px;
+            margin-bottom: 10px;
+        }
+        .poster{
+            width: 500px;
+            height: 550px;
+        }
+        .actors p{
+            font-size: medium;
+        }
+   }
+     
+    
+    /* Large */
+    @media (min-width: 1200px)
+    {
+        .container{
+            width:1170px;
+        }
+        .header{
+            width:100%;
+        }
+        .actors
+        {
+            display: flex;
+        }
+        .ac1, .ac2, .ac3, .ac4{
+            position: relative;
+            left:18px;
+        }
+    }
