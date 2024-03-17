@@ -273,6 +273,8 @@ footer .copyright p{
         }
         .cast h2{
             display: block;
+            position: relative;
+            left: -8px;
         }
         .actors{
             display: block;
@@ -323,7 +325,7 @@ footer .copyright p{
         } 
         .ac1, .ac2, .ac3, .ac4{
             position: relative;
-            left:-35px;
+            left:-45px;
         }
     }
 
@@ -406,9 +408,8 @@ footer .copyright p{
             display: flex;
         }
         .cast h2{
-            margin-left:20px;
-            margin-top:20px;
-            float: left;
+            position: relative;
+            left:-430px;
         }
         .ac1, .ac2, .ac3, .ac4{
             position: relative;
@@ -463,5 +464,9 @@ footer .copyright p{
         .ac1, .ac2, .ac3, .ac4{
             position: relative;
             left:18px;
+        }
+        .cast h2{
+            position: relative;
+            left:-530px;
         }
     }
